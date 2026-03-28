@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Список завдань</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            width: 300px;
+            margin: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Непарні */
+        li:nth-child(odd) {
+            background-color: #cce5ff;
+        }
+
+        /* Парні */
+        li:nth-child(even) {
+            background-color: #99ccff;
+        }
+
+        /* Виконані */
+        .done {
+            background-color: #d9d9d9 !important;
+            text-decoration: line-through;
+        }
+
+        /* Іконки */
+        .icon {
+            margin-right: 10px;
+        }
+
+        .text {
+            flex-grow: 1;
+        }
+
+        .delete {
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Список завдань</h2>
+
+<ul>
+    <li class="done">
+        <span class="icon">✔</span>
+        <span class="text">Зробити домашнє завдання</span>
+        <span class="delete">✖</span>
+    </li>
+
+    <li>
+        <span class="icon">☐</span>
+        <span class="text">Прибрати кімнату</span>
+        <span class="delete">✖</span>
+    </li>
+
+    <li class="done">
+        <span class="icon">✔</span>
+        <span class="text">Вивчити HTML</span>
+        <span class="delete">✖</span>
+    </li>
+
+    <li>
+        <span class="icon">☐</span>
+        <span class="text">Пограти у футбол</span>
+        <span class="delete">✖</span>
+    </li>
+</ul>
+
+</body>
+</html>
