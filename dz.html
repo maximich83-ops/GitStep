@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Boards</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.boards {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+
+    overflow-x: auto;   
+    overflow-y: hidden;
+}
+
+
+.board {
+    min-width: 300px;
+    max-width: 400px;
+    height: 100%;
+
+    background: #333;
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.board-header {
+    padding: 10px;
+    background: #444;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.board-content {
+    flex: 1;
+    padding: 10px;
+
+    overflow-y: auto; 
+}
+
+
+.task {
+    background: #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">MY BOARDS</div>
+
+<div class="boards">
+
+    <div class="board">
+        <div class="board-header">To Do</div>
+        <div class="board-content">
+            <div class="task">Завдання 1</div>
+            <div class="task">Завдання 2</div>
+            <div class="task">Завдання 3</div>
+            <div class="task">Завдання 4</div>
+            <div class="task">Завдання 5</div>
+            <div class="task">Завдання 6</div>
+            <div class="task">Завдання 7</div>
+            <div class="task">Завдання 8</div>
+        </div>
+    </div>
+
+    <div class="board">
+        <div class="board-header">In Progress</div>
+        <div class="board-content">
+            <div class="task">Завдання 1</div>
+            <div class="task">Завдання 2</div>
+        </div>
+    </div>
+
+    <div class="board">
+        <div class="board-header">Done</div>
+        <div class="board-content">
+            <div class="task">Готово 1</div>
+            <div class="task">Готово 2</div>
+        </div>
+    </div>
+
+    
+    <div class="board">
+        <div class="board-header">Extra</div>
+        <div class="board-content">
+            <div class="task">Ще щось</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
